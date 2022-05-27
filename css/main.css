@@ -1,0 +1,188 @@
+/* 
+ * Main CSS file for Assignment 2 in CSCI 2170, Fall 2021
+ * Author: Raghav V. Sampangi (raghav@cs.dal.ca)
+ * Date: 21 September 2021
+
+ * Developed CSS file for Assignment 2 in CSCI2170, Fall 2021
+ * Siyuan Chen (sy611254@dal.ca)
+ * Date: 14 October 2021
+ */
+
+/* Common body properties to be inherited by elements on the page */
+
+/* add box-sizing for all*/
+*{
+	box-sizing: border-box;
+}
+
+/* add a font-family for text in Assignment 2*/
+body {
+	margin: 0 auto;
+	padding: 0;
+	width: 80vw;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Common padding for main containers of the page */
+header, main, footer {
+	padding: 1em;
+}
+
+/* Header/banner styles, to set the background and other properties for content elements in the page banner, including styling for the navigation links */
+header.banner {
+	color: steelblue;
+	border-bottom: 10px solid gold;
+}
+
+/* the href in header "Jedi Search" have no underscore so text-decoration is none, and color is steelblue*/
+header.banner a{
+	text-decoration: none;
+	color: steelblue;
+}
+
+/* There exist a hover*/
+header.banner a:hover{
+	color: #c23616;
+}
+
+/*set the margin for search form*/
+#search-form{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/*center the div for input*/
+#input{
+	text-align:center;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+/*style the input for "What would you like to search?"*/
+#sf-keywords{
+	width: 35%;
+	text-align:center;
+	border-radius: 5px;
+	border: 1.5px solid steelblue;
+	padding: 1em 0em;
+}
+
+/*click the input then the background-color changed*/
+#sf-keywords:focus{
+	background-color: #ffeaa7;
+}
+
+/*center the div for sentence*/
+#choose{
+	text-align:center;
+}
+
+/*center the div for dropdown*/
+#dropdown{
+	text-align:center;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+}
+
+/*style the dropdown*/
+select{
+	width: 20%;
+	text-align: center;
+    text-align-last: center;
+	border: 1.5px solid steelblue;
+	border-radius: 5px;
+	padding: 0.5em 1em;
+}
+
+/*hover the select*/
+select:hover{
+	background-color: #ecf0f1;
+}
+
+/*center the div for button*/
+#button{
+	text-align:center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+/*style the button*/
+#search{
+	width:25%;
+	text-align:center;
+	background-color: #ecf0f1;
+	border-radius: 5px;
+	padding: 0.5em 1em;
+	border: none;
+}
+
+/*hover the button*/
+#search:hover{
+	background-color: #dfe6e9;
+}
+
+/* Footer styles */
+footer.pg-footer {
+	font-size: smaller;
+	border-top: 1px solid steelblue;
+	color: #636e72;
+	margin: 4em 0 0 0;
+}
+footer.pg-footer p {
+	padding: 1.5em 0;
+}
+
+
+/*
+ * 	For search results styling, I have used colours from the following website:
+ *	https://flatuicolors.com/
+ *  Date Accessed: 12 October 2021
+ */
+
+
+ /*for the search-help section*/
+#search-help{
+	 display: none;
+ }
+
+ /*
+  * I learn the use display: none to hide the text
+  * URL: https://forum.jquery.com/topic/slidetoggle-closed-by-default
+  * Date Accessed: 12 October 2021
+  *
+  */
+
+/*style the article title, article author and article text*/
+#art-title{
+	margin-top: 4%;
+	text-transform: uppercase;
+}
+
+#art-title a{
+	color: #0984e3;
+	text-decoration: underline;
+}
+
+
+#art_author{
+	color: #0984e3;
+}
+
+#art-text{
+	color: #636e72;
+}
+
+/*
+ * Learned border-bottom on w3school
+ * URL: https://www.w3schools.com/cssref/pr_border-bottom.asp
+ * Date Accessed: 12 October 2021
+ *
+ */
+
+ #art-total{
+	border-bottom: 1px solid #b2bec3;
+ }
+
+ #art-title-article{
+	text-transform: uppercase;
+ }
